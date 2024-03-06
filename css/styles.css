@@ -1,34 +1,43 @@
 /* Use this file to use your own styles*/
 
 /* Import declaration to use Google Fonts - check https://fonts.google.com/ for details */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 /* Styles for the body */
-
 body {
-	font-family: Lato, "Open Sans", Roboto, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	color: #202030;
-	background-color: #f8f8fc;
+	font-family: "Nunito";
+	background: rgb(234,196,213);
+    background: linear-gradient(274deg, rgba(234,196,213,1) 26%, rgba(141,255,205,1) 79%);
+	background-color: #eac4d5;
 }
+
+/* For the body text i added a gradient so that the background of the website is custom. I used code from this gradient code generator: https://cssgradient.io/ */
+
+.header-text {
+	color: #8dffcd;
+}
+
+/*Styles for headers*/
 
 /* Styles for custom classes in the document. (There are more, try to find them out!) */
 
 .resume-header {
-    background-color: #e0f0ff;
+	background-color: #14110f
 }
 
 .resume-main {
-	background-color: #fffefc;
+	background-color: #eac4d5;
 }
 
 .resume-aside {
-	background-color: #fff0e0;
+	background-color: #8dffcd;
 }
 
 /* Styles for lists in the document */
 
 .biography-details li::before, .skill-list li::before {
-	content: ">";
+	content: "-";
+	color: #14110f;
 	font-weight: 800;
 	display: inline-block;
 	width: 1em;
@@ -36,7 +45,7 @@ body {
 }
 
 .biography-details li::before {
-	color: #EE7623;
+	color: #14110f;
 }
 
 .biography-details li, .skill-list li {
@@ -48,4 +57,18 @@ body {
 .contact-icon {
 	height: 1em;
 	flex-basis: 1.4em;
+}
+
+/* I added these classes to create different colored texts */
+
+.language-progress{
+	background-color:azure !important;
+}
+
+.green-text{
+	color: #8dffcd;
+}
+
+.pink-text{
+	color: #eac4d5;
 }
